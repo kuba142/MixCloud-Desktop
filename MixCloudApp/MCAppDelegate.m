@@ -24,11 +24,13 @@
 }
 
 - (void)play {
-    [self run: @"$('audio')[0].play();"];
+    //[self run: @"$('audio')[0].play();"];
+    [self run: @"$('.player-control').trigger('click' );"];
 }
 
 - (void)pause {
-    [self run: @"$('audio')[0].pause();"];
+    //[self run: @"$('audio')[0].pause();"];
+    [self run: @"$('.player-control').trigger('click' );"];
 }
 
 - (void)playPause {
